@@ -1,0 +1,40 @@
+body{
+    color: #fff;
+    background: #510026;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: fantasy;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin:0;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    color: #fbd0d0;
+    background-color: #004c98;
+    border: solid 1px black;
+    width: 220px;
+    height: 250px;
+    font-weight: 600;
+    margin: 10px 10px 20px 20px;
+}
+
+div{
+    padding-top: 50px;
+}
+
+img, image{
+    width: 200px;
+    height: 200px;
+}

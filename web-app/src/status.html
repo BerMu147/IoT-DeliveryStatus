@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOSTAVA STATUS ORDER</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script>
+            //INIT FIREBASE
+            var firebaseConfig = {
+              apiKey: "AIzaSyAm6iQzjDz1E7S-GqrqX0X2Ajt03fQnI54",
+              authDomain: "arduinotest-4702d.firebaseapp.com",
+              databaseURL: "https://arduinotest-4702d-default-rtdb.europe-west1.firebasedatabase.app",
+              projectId: "arduinotest-4702d",
+              storageBucket: "arduinotest-4702d.appspot.com",
+              messagingSenderId: "1071023486110",
+              appId: "1:1071023486110:web:1453088598b408634db78f",
+              measurementId: "G-D972PDN77N"  
+              };
+              firebase.initializeApp(firebaseConfig);
+              var database = firebase.database();
+            // const analytics = getAnalytics(firebaseaApp);
+            // const auth = getAuth(firebaseaApp);
+          </script>
+    </head>
+    <body>
+        <h2>Click on the current status of order:</h2>
+        <div class="status">
+            <button onclick="statusAccepted()" id="Accept" style="color: yellow;">Accept</button>
+            <button onclick="statusCompleted()" id="Complete" style="color: greenyellow;">Complete</button>
+            <button onclick="statusDeclined()" id="Decline" style="color: red;">Decline</button>
+        </div>
+        <br><div id="output"></div>
+        <div id="error" style="color: red;"></div>
+        <div><button onclick="statusReturned()" id="returnButton">Return</button></div>
+        <script src="./status.js"></script> 
+    </body>
+</html>

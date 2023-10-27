@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOSTAVA HOMEPAGE</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <h2>What do you feel like eating now?</h2>
+        <div class="main">
+            <button id="pizza"><img src="./img/pizza.png" alt="buttonpng"/>Pizza</button>
+            <button id="hamburger"><img src="./img/burger.png" alt="buttonpng"/>Hamburger</button>
+            <button id="goulash"><img src="./img/goulash.png" alt="buttonpng"/>Goulash</button><br>
+            <button id="sarma"><img src="./img/sarma.png" alt="buttonpng"/>Sarma</button>
+            <button id="wings"><img src="./img/wings.png" alt="buttonpng"/>Chicken Wings</button>
+            <button id="vegetables"><img src="./img/vege.png" alt="buttonpng"/>Fried Vegetables</button>
+        </div>
+        <div><h2 id="output"></h2></div>
+        <div class="status">
+            <button id="acceptButton" type="submit">Place Order</button>
+            <button id="resetButton">Reset</button>
+            <div id="error" style="color: red;"></div>
+        </div>
+        <script type="module" src="functions.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    </body>
+</html>

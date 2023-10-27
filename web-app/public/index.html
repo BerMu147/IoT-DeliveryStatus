@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- // === REFERENCES === //
+    //Project Console: https://console.firebase.google.com/project/arduinotest-4702d/overview
+    //Hosting URL: https://arduinotest-4702d.web.app -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Welcome to Firebase Hosting</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <!-- update the version number as needed -->
+    <!-- <script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.5.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+
+    <!-- <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style> -->
+    <script>
+      //INIT FIREBASE
+      var firebaseConfig = {
+        apiKey: "AIzaSyAm6iQzjDz1E7S-GqrqX0X2Ajt03fQnI54",
+        authDomain: "arduinotest-4702d.firebaseapp.com",
+        databaseURL: "https://arduinotest-4702d-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "arduinotest-4702d",
+        storageBucket: "arduinotest-4702d.appspot.com",
+        messagingSenderId: "1071023486110",
+        appId: "1:1071023486110:web:1453088598b408634db78f",
+        measurementId: "G-D972PDN77N"  
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+      // const analytics = getAnalytics(firebaseaApp);
+      // const auth = getAuth(firebaseaApp);
+    </script>
+  </head>
+  <body>
+    <div id="message">
+      <p>Reading int: <span id="reading-int"></span></p>
+      <p>Reading float: <span id="reading-float"></span></p>
+      <h1> LED TURN ON / OFF APP </h1>
+      <button onclick="ledOn()">ON</button>
+      <button onclick="ledOff()">OFF</button>
+    </div>
+
+
+
+    <h2>What do you feel like eating now?</h2>
+    <div class="main">
+        <button id="pizza"><img src="../src/img/pizza.png" alt="buttonpng"/>Pizza</button>
+        <button id="hamburger"><img src="../src/img/burger.png" alt="buttonpng"/>Hamburger</button>
+        <button id="goulash"><img src="../src/img/goulash.png" alt="buttonpng"/>Goulash</button><br>
+        <button id="sarma"><img src="../src/img/sarma.png" alt="buttonpng"/>Sarma</button>
+        <button id="wings"><img src="../src/img/wings.png" alt="buttonpng"/>Chicken Wings</button>
+        <button id="vegetables"><img src="../src/img/vege.png" alt="buttonpng"/>Fried Vegetables</button>
+    </div>
+    <div><h2 id="output"></h2></div>
+    <div class="status">
+        <button id="acceptButton" type="submit">Place Order</button>
+        <button id="resetButton">Reset</button>
+        <div id="error" style="color: red;"></div>
+    </div>
+    <script type="module" src="app.js" defer></script>  
+    <script src="../src/functions.js" defer></script>
+  </body>
+</html>
