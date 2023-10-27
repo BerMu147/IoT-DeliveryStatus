@@ -6,8 +6,7 @@ The Project consists of 4 main components:
 - Firebase
 - Hardware material (NodeMCU, arduino board, 3 leds and 3 resistors)
 
-Web application is deployed on the firebase and can be accessed on the following link:
-https://arduinotest-4702d.web.app/
+Web application is deployed on the firebase and can be accessed on <a href="https://www.example.com](https://arduinotest-4702d.web.app/" target="_blank">Order Delivery Status</a>
 
 # Goal of the project
 User is able to track delivery order status on arduino hardware.
