@@ -3,7 +3,7 @@ var dataFloatPath = 'test/float';
 var dataIntPath = 'test/int';
 
 var dataLedpath = 'LED';
-// Database Paths - REAL
+
 var dataAccept = 'Accepted';
 var dataComplete = 'Completed';
 var dataDecline = 'Declined';

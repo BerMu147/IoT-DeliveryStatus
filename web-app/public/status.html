@@ -7,7 +7,7 @@
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
         <script>
-            //INIT FIREBASE
+            //INIT FIREBASE MUST BE INCLUDED IN THIS FILE AS WELL
             var firebaseConfig = {
               apiKey: "AIzaSyAm6iQzjDz1E7S-GqrqX0X2Ajt03fQnI54",
               authDomain: "arduinotest-4702d.firebaseapp.com",
@@ -20,8 +20,6 @@
               };
               firebase.initializeApp(firebaseConfig);
               var database = firebase.database();
-            // const analytics = getAnalytics(firebaseaApp);
-            // const auth = getAuth(firebaseaApp);
           </script>
     </head>
     <body>
@@ -31,8 +29,10 @@
             <button onclick="statusCompleted()" id="Complete" style="color: greenyellow;">Complete</button>
             <button onclick="statusDeclined()" id="Decline" style="color: red;">Decline</button>
         </div>
+        <!--OUTPUT TEXT OF THE CURRENT STATUS OF ORDER-->
         <br><div id="output"></div>
         <div id="error" style="color: red;"></div>
+        <!--Return button and reset the leds-->
         <div><button onclick="statusReturned()" id="returnButton">Return</button></div>
         <script src="./status.js"></script> 
     </body>

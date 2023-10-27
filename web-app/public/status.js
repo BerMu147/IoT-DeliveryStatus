@@ -42,7 +42,7 @@ function statusCompleted() {
 }
 function statusDeclined() {
     if (output.textContent === 'Order is Completed!') {
-        error.textContent = "Order in progress, cannot be Declined now!";
+        error.textContent = "Order is already Completed!";
     }
     else {
         output.textContent = 'Order is Declined!';
