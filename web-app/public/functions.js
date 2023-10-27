@@ -49,6 +49,6 @@ acceptButton.addEventListener('click', function() {
     }
     else{
         error.textContent = '';
-        window.location.href = `../status.html`;
+        window.location.href = `./status.html`;
     }
 });
