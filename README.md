@@ -1,5 +1,7 @@
 # IoT-DeliveryStatus
 
+Self learned and done an IoT project with Arduino board for presentation on University 
+
 The Project consists of 4 main components:
 - Web Application (Frontend Part) using plain JS, HTML & CSS
 - CPP code (Arduino aka Controler Part) using PlatformIO extension on VS Code
