@@ -15,10 +15,8 @@ Software Requirements:
 - Firebase account and project with realtime database
 
 Directory description:
-
-Arduino-Controller - Responsible for communication between web application, firebase and arduino device
-
-web-app  - Frontend web application interface deployed on firebase. All custom files must be included in public folder in order to be deployed.
+- Arduino-Controller - Responsible for communication between web application, firebase and arduino device
+- web-app  - Frontend web application interface deployed on firebase. All custom files must be included in public folder in order to be deployed.
 
 # Usage
 On first page user is able to order the meal via application.
