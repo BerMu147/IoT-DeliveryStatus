@@ -40,7 +40,7 @@ ESP8266WebServer server(3000);
 //leds init
 int led1 = D1;
 int led2 = D3;
-int led3 = D7;
+int led3 = D7; // LED 3 is not used in this case but is defined
 
 // == FIREBASE AND TESTING == //
 
@@ -92,32 +92,6 @@ void loop()
   if (Firebase.ready() && signupOK && (millis() - sendDataPrevMillis > 7000 || sendDataPrevMillis == 0))
   {
     sendDataPrevMillis = millis();
-    // Write an Int number on the database path test/int
-    if (Firebase.RTDB.setInt(&fbdo, "test/int", count))
-    {
-      Serial.println("PASSED");
-      Serial.println("PATH: " + fbdo.dataPath());
-      Serial.println("TYPE: " + fbdo.dataType());
-    }
-    else
-    {
-      Serial.println("FAILED");
-      Serial.println("REASON: " + fbdo.errorReason());
-    }
-    count++;
-
-    // Write an Float number on the database path test/float
-    if (Firebase.RTDB.setFloat(&fbdo, "test/float", 0.01 + random(0, 100)))
-    {
-      Serial.println("PASSED");
-      Serial.println("PATH: " + fbdo.dataPath());
-      Serial.println("TYPE: " + fbdo.dataType());
-    }
-    else
-    {
-      Serial.println("FAILED");
-      Serial.println("REASON: " + fbdo.errorReason());
-    }
 
     // Read status from Firebase
     Firebase.RTDB.getBool(&fbdo, "LED/led_1/turnedOn");
