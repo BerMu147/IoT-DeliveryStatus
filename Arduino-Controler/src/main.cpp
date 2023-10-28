@@ -17,8 +17,8 @@
 #include "addons/RTDBHelper.h"
 
 // Insert your network credentials
-#define WIFI_SSID "OG Kolijevka"
-#define WIFI_PASSWORD "gengstapasvord"
+#define WIFI_SSID "Redmi Note 8 Pro"
+#define WIFI_PASSWORD "123456789"
 
 // Insert Firebase project API Key
 #define API_KEY "AIzaSyAm6iQzjDz1E7S-GqrqX0X2Ajt03fQnI54"
@@ -37,6 +37,7 @@ bool signupOK = false;
 
 ESP8266WebServer server(3000);
 
+//leds init
 int led1 = D1;
 int led2 = D3;
 int led3 = D7;
@@ -80,7 +81,7 @@ void setup()
 
   Firebase.begin(&config, &auth);
   Firebase.reconnectWiFi(true);
-
+  //setup pins where leds are connected
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
