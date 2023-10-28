@@ -15,6 +15,7 @@ Software Requirements:
 - Firebase account and project with realtime database
 
 Directory description:
+
 Arduino-Controller - Only responsible for communication between web application, firebase and arduino device
 web-app  - Frontend web application interface linked with firebase via config and is deployed on firebase
 
