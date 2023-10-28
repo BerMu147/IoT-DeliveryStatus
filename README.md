@@ -6,9 +6,15 @@ The Project consists of 4 main components:
 - Web Application (Frontend Part) using plain JS, HTML & CSS
 - CPP code (Arduino aka Controler Part) using PlatformIO extension on VS Code
 - Firebase
-- Hardware material (NodeMCU, arduino board, 3 leds and 3 resistors)
+- Hardware material (NodeMCU, arduino board, 3 cable pins,3 leds and 3 resistors)
+
+Software Requirements:
+- Working environment (VS CODE)
+- PlatformIO extension for VS CODE (PlatformIO is used for arduino code. It's same as Arduino IDE)
+- Libraries on PlatformIO (configured in platform.ini)
+- Firebase account and project with realtime database
 
 Web application is deployed on the firebase and can be accessed on following link: https://arduinotest-4702d.web.app/
 
 # Goal of the project
-User is able to track delivery order status on arduino hardware.
+User is able to see in which state the delivery is.
