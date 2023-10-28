@@ -15,10 +15,10 @@ Software Requirements:
 - Firebase account and project with realtime database
 
 Directory description:
-*Arduino-Controller - Only responsible for communication between web application, firebase and arduino device
-*web-app  - Frontend web application interface that is deployed on firebase
+Arduino-Controller - Only responsible for communication between web application, firebase and arduino device
+web-app  - Frontend web application interface linked with firebase via config and is deployed on firebase
 
 Web application is deployed on the firebase and can be accessed on following link: https://arduinotest-4702d.web.app/
 
-# Goal of the project
+** Goal of the project
 User is able to see in which state the delivery is.
