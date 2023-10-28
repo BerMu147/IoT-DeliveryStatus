@@ -20,5 +20,5 @@ web-app  - Frontend web application interface linked with firebase via config an
 
 Web application is deployed on the firebase and can be accessed on following link: https://arduinotest-4702d.web.app/
 
-** Goal of the project
+# Goal of the project
 User is able to see in which state the delivery is.
