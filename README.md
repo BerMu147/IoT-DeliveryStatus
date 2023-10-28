@@ -16,9 +16,9 @@ Software Requirements:
 
 Directory description:
 
-Arduino-Controller - Only responsible for communication between web application, firebase and arduino device
+Arduino-Controller - Responsible for communication between web application, firebase and arduino device
 
-web-app  - Frontend web application interface linked with firebase via config and is deployed on firebase
+web-app  - Frontend web application interface deployed on firebase
 
 # Goal of the project
 User is able to see in which state the delivery is.
