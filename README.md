@@ -22,10 +22,11 @@ Directory description:
 On first page user is able to order the meal via application.
 Second page is redirecting to admin panel and admin selects in which state the order is.
 Then the input is sent over firebase to arduino and defined leds are turned on.
+
 States:
-  Accepted: First led turns on
-  Completed: Second turns on and first turns off.
-  Declined or Returned: All leds turned off
+- Accepted: First led turns on
+- Completed: Second turns on and first turns off.
+- Declined or Returned: All leds turned off
 
 # Goal of the project
 User is able to see in which state the delivery is.
