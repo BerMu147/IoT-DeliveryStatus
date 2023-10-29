@@ -31,7 +31,6 @@ States:
 # Goal of the project
 User is able to see in which state the delivery is.
 
-Web application is deployed on the firebase and can be accessed on following link: https://arduinotest-4702d.web.app/
 
 # Related Links
 - https://platformio.org/
